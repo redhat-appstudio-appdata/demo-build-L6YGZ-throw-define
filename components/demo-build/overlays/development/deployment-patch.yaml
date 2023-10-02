@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: demo-build
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-support-csears-tenant/demo-build/demo-build@sha256:d19b157d1659908f4fe00dc6d6213624acb3004decc1aeec9c65c8b24b5e0464
+        name: my-java-springboot
+        resources: {}
+status: {}
